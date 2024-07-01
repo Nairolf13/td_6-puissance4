@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.buttonPlay, .buttonIa, .replay, button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.buttonPlay {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+.buttonPlay:hover {
+    background-color: #218838;
+}
+
+.buttonIa {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.buttonIa:hover {
+    background-color: #0056b3;
+}
+
+.replay {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.replay:hover {
+    background-color: #c82333;
+}
+
+button {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+button:hover {
+    background-color: #5a6268;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.grille {
+    display: grid;
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.ligne {
+    display: flex;
+}
+
+.cellule {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #dee2e6;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cellule:hover {
+    background-color: #f8f9fa;
+}
+
+.cellule:active {
+    background-color: #e9ecef;
+}
+
+.puissance4 .cellule {
+    border-radius: 50%;
+}
+
+.morpion .cellule {
+    border-radius: 0;
+}
+
+.score1, .score2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#container > p {
+    margin: 5px 0;
+    font-size: 18px;
+}
